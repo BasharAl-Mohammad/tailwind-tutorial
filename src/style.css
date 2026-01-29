@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark,.dark *));
+@theme {
+  --color-chestnut: #973F29;
+}
+
 body {
   background-color: #10172a;
 }
