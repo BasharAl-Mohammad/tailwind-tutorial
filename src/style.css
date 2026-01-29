@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark,.dark *));
+
+body {
+  background-color: #10172a;
+}
+
 @theme {
   --color-chestnut: #973F29;
 }
 
-body {
-  background-color: #10172a;
+@layer components {
+  .card {
+    @apply m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black;
+  }
 }
